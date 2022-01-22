@@ -1,5 +1,5 @@
 # SampleProjects
-Brief summary of contents 
+Brief conding examples from past projects done
 
 ## DailyStockDataExtract:
 Extracting daily stock prices from S&P 500 companies listed under Yahoo finance and loading these into a local database. 
