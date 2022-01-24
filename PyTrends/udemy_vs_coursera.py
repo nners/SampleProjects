@@ -43,13 +43,6 @@ ed_tech_data_transform = pd.read_sql(transform_query, conn)
 ed_tech_data_transform.to_sql('avg_company_interest', conn, if_exists='replace', index=False)
 
 
-import sqlite3
-import pytrends
-import pandas as pd
-from sqlite3 import Error
-from pyspark.sql import SparkSession
-from pytrends.request import TrendReq
-
 class PyTrendsETL():
     def __init__(self,keyword_list,raw_data_name=None,conn=None):
         self.keyword_list = keyword_list
